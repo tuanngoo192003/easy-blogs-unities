@@ -3,5 +3,6 @@ import NxWelcome from './NxWelcome.vue';
 </script>
 
 <template>
-  <NxWelcome title="easy-blogs-unities" />
+<!--  <NxWelcome title="easy-blogs-unities" />-->
+  <router-view />
 </template>

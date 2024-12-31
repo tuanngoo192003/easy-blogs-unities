@@ -4,6 +4,21 @@
   "includedScripts": [],
   "projectType": "application",
   "sourceRoot": "./src",
+  "root": "apps/easy-blogs-unities",
   "// targets": "to see all targets run: nx show project easy-blogs-unities --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/easy-blogs-unities"
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "port": 4200
+      },
+      "buildTarget": "easy-blogs-unities:build"
+    }
+  }
 }
